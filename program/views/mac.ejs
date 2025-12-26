@@ -1,0 +1,25 @@
+<!Doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>マックメニュー</title>
+</head>
+<body>
+  <h2>好きなハンバーガーメニュー一覧</h2>
+  
+  <table>
+    <tr><th>順位</th><th>商品名</th></tr>
+
+      <% let number = 0 %>
+      <% for( let row of data ) { %>
+        <tr>
+          <td><%= row.id %></td>
+          <td><a href="/mac/<%= number %>"><%= row.name %></a></td>
+          
+        </tr>
+        <% number += 1 %>
+      <% } %>
+  </table>
+  <a href="/mac/create">新規登録</a>
+</body>
+</html>
