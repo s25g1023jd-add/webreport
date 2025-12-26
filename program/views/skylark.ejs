@@ -1,0 +1,24 @@
+<!Doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>好きなすかいらーく店舗一覧</title>
+</head>
+<body>
+  <h2>すかいらーく店舗一覧</h2>
+  
+  <table>
+    <tr><th>ID</th><th>店舗名</th></tr>
+
+      <% let number = 0 %>
+      <% for( let row of data ) { %>
+        <tr>
+          <td><%= row.id %></td>
+          <td><a href="/skylark/<%= number %>"><%= row.name %></a></td>
+        </tr>
+        <% number += 1 %>
+      <% } %>
+  </table>
+  <a href="/skylark/create">新規登録</a>
+</body>
+</html>
