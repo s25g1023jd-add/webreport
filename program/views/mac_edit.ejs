@@ -1,0 +1,34 @@
+<!Doctype html>
+<html>
+<head>
+  <link rel="stylesheet" href="/style.css">
+  <meta charset="utf-8">
+  <title>編集: <%= data.name %></title>
+</head>
+<body>
+  <h2><%= data.name %> の編集</h2>
+  <form action="/mac/update/<%= id %>" method="POST">
+    <table>
+      <tr><th>項目</th><th>データ</th></tr>
+      <tr><td>ID</td><td><%= data.id %></td></tr>
+      <tr>
+        <td>商品名</td>
+        <td><input type="text" name="name" value="<%= data.name %>"></td>
+      </tr>
+      <tr>
+        <td>価格</td>
+        <td><input type="text" name="price" value="<%= data.price %>"></td>
+      </tr>
+      <tr>
+        <td>カテゴリ</td>
+        <td><input type="text" name="category" value="<%= data.category %>"></td>
+      </tr>
+      <tr>
+        <td>カロリー</td>
+        <td><input type="text" name="calorie" value="<%= data.calorie %>"></td>
+      </tr>
+    </table>
+    <input type="submit" value="更新">
+  </form>
+</body>
+</html>

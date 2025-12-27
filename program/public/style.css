@@ -1,0 +1,77 @@
+ /* 全体のフォントと余白 */
+body {
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", sans-serif;
+    color: #333;
+    max-width: 800px; /* 画面の幅をほどよく制限 */
+    margin: 30px auto; /* 画面中央に寄せる */
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+/* 見出し */
+h1, h2 {
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    color: #444;
+}
+
+/* 表（テーブル）のデザイン */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* ほんのり影 */
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4; /* 薄いグレー */
+    font-weight: bold;
+}
+
+/* リンクのデザイン */
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* 入力フォームを見やすく */
+input[type="text"], input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+/* ボタンのデザイン（緑色） */
+input[type="submit"], button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover, button:hover {
+    background-color: #45a049;
+}
+
+/* 区切り線 */
+hr {
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin: 20px 0;
+}

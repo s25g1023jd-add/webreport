@@ -1,0 +1,33 @@
+<!Doctype html>
+<html>
+<head>
+  <link rel="stylesheet" href="/style.css">
+  <meta charset="utf-8">
+  <title>すき家メニュー</title>
+</head>
+<body>
+  <h2>好きなすき家メニュー一覧</h2>
+  
+  <table>
+    <tr><th>順位</th><th>商品名</th></tr>
+
+      <% let number = 0 %>
+      <% for( let row of data ) { %>
+        <tr>
+          <td><%= row.id %></td>
+          <td><a href="/sukiya/<%= number %>"><%= row.name %></a></td>
+       
+          
+        </tr>
+        <% number += 1 %>
+      <% } %>
+  </table>
+  <a href="/sukiya/create">新規登録</a>
+   </p>
+
+  <hr>
+  <p>
+      <a href="/">トップページに戻る</a>
+  </p>
+</body>
+</html>
